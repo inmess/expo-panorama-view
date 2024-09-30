@@ -1,0 +1,12 @@
+//
+// Created by 程宇栋 on 2024/9/19.
+//
+
+#ifndef EXPO_PANORAMA_VIEW_EXAMPLE_CODECTYPE_H
+#define EXPO_PANORAMA_VIEW_EXAMPLE_CODECTYPE_H
+
+enum CodecType {
+    UNKNOWN = -2, NOT_SUPPORTED = -1, HW = 0, SW = 1
+};
+
+#endif //EXPO_PANORAMA_VIEW_EXAMPLE_CODECTYPE_H

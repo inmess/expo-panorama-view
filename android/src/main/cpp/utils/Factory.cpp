@@ -1,0 +1,40 @@
+//
+// Created by 程宇栋 on 2024/9/19.
+//
+
+#include "Factory.h"
+
+IAudioOutput *getAudioOutput(PlayerContext *playerContext) {
+#if defined OS_ANDROID
+    // android audio output
+    return new OboePlayer(playerContext);
+#elif defined OS_IOS
+    // TODO: add ios audio output
+    return nullptr;
+#elif defined OS_WINDOWS
+    // TODO: add windows audio output
+    return nullptr;
+#elif defined OS_LINUX
+    // TODO: add linux audio output
+    return nullptr;
+#else
+    return nullptr;
+#endif
+}
+
+IVideoOutput *getVideoOutput(PlayerContext *playerContext) {
+#if defined OS_ANDROID
+    return new OpenGLESPlayer2(playerContext);
+#elif defined OS_IOS
+    // TODO: add ios audio output
+    return nullptr;
+#elif defined OS_WINDOWS
+    // TODO: add windows audio output
+    return nullptr;
+#elif defined OS_LINUX
+    // TODO: add linux audio output
+    return nullptr;
+#else
+    return nullptr;
+#endif
+}

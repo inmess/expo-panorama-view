@@ -2,6 +2,8 @@
 
 Panorama Player for Expo
 
+Takes an RTSP stream or a URL to a panorama video file and displays it in a 360° view.
+
 # API documentation
 
 - [Documentation for the main branch](https://github.com/expo/expo/blob/main/docs/pages/versions/unversioned/sdk/panorama-view.md)
